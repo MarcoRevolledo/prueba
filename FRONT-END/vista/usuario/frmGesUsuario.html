@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- libreria web -->
+    <link href="../../librerias/bootstrap-5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/main.css">
+
+    <title>.:Gestion de Usuarios:.</title>
+</head>
+
+<body>
+        <form id="frmGesUsuario" name="frmGesUsuario">
+            <div id="divFormulario" class="table-responsive">
+                <table id="tblFormulario" class="table table-hover">
+                    <thead id="theadFormulario" class="table-primary">
+                        <tr>
+                            <td colspan="4"><strong>
+                                    <h2>Gestionar Usuarios</h2>
+                                </strong></td>
+                        </tr>
+                    </thead>
+                    <!--//*-Encabezado del Frm-->
+
+                    <tbody id="tbodyFormulario">
+                        <tr>
+                            <td>Nombres</td>
+                            <td>
+                                <input type="hidden" value="" id="id" name="id">
+                                <input type="text" value "" id="nombre" name="nombre">
+                            </td>
+
+                            <td>Correo</td>
+                            <td>
+                                <input type="email" value "" id="correo" name="correo">
+                            </td>
+                        </tr>
+                        <!--//*-Primer Campo de la captura-->
+
+                        <tr>
+                            <td>Apellidos</td>
+                            <td>
+                                <input type="text" value "" id="apellido" name="apellido">
+                            </td>
+                            <td>Identificación</td>
+                            <td>
+                                <input type="text" value "" id="identificacion" name="identificacion">
+                            </td>
+
+                        </tr>
+                        <!--//*-Segundo Campo de la captura-->
+
+                        <tr>
+                            <td>Tipo Rol</td>
+                            <td>
+                                <select id='rol'>
+                                    <option>Usuario</option>
+                                    <option>Administrador</option>
+                                </select>
+                            </td>
+                            <td>Contraseña</td>
+                            <td>
+                                <input type="password" value "" id="contrasena" name="contrasena">
+                            </td>
+
+                        </tr>
+                        <!--//*-Cuarto Campo de la captura-->
+                        <tr>
+                            <td colspan="4">
+                                <input type="button" value="A D I C I O N A R" id="btnAdicionar" name="btnAdicionar"
+                                    onclick="" class="btn btn-primary">
+                                <input type="button" value="A C T U A L I Z A R" id="btnActualizarr"
+                                    name="btnActualizar" onclick="" class="btn btn-secondary">
+                                <input type="button" value="E L I M I N A R" id="btnEliminar" name="btnEliminar"
+                                    onclick="" class="btn btn-danger">
+                            </td>
+
+                        </tr>
+                        <!--//*-Diseño de los Botones-->
+
+
+                    </tbody>
+                    <!--//*-Cuerpo del Primer Bloque-->
+
+                </table>
+
+            </div>
+            <!--//*-la Division de Cada seccion-->
+            <tr>
+                <td>
+                    <select id='salSelector'>
+                        <option>--Todos los Usuarios</option>
+                        <option>Nombre Usuario</option>
+                        <option>Identificación Usuario</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" value "" id="txtConsulta" name="txtConsulta">
+                </td>
+            </tr>
+            <!--//*-Segunda Parte del la captura-->
+            <br>
+            <br>
+            <div id="divInfUsuarios" class="table-responsive">
+                <table id="tableResultado" class="table table-striped">
+                    <thead id="theadTableResultado">
+                        <tr>
+                            <td>Id</td>
+                            <td>Correo</td>
+                            <td>Nombres</td>
+                            <td>Identificación</td>
+                            <td>Apellidos</td>
+                            <td>Contraseña</td>
+                            <td>Rol</td>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbodyUsuarios">
+                        <!--//*-Informacion de la Base de Dato-->
+                    </tbody>
+                </table>
+
+            </div>
+            <!--//*-Segunda Parte la Division de la Tabla-->
+
+
+        </form>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="../librerias/bootstrap-5.1.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

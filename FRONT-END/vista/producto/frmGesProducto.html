@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title>Gestionar Productos</title>
+
+    <!-- Bootstrap core CSS  con npm-->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <link href="../../librerias/bootstrap-5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/main.css">
+
+</head>
+
+<body>
+    <form id="frmContinente" name="continente">
+        <div id="divEntradaDato" class="table-responsive">
+            <table id="tblEntradaDato" class="table table-hover">
+
+                <thead id="theadFormulario" class="table-primary">
+                    <tr>
+                        <td colspan="4"><strong>
+                                <h2>Gestionar Productos</h2>
+                            </strong></td>
+                    </tr>
+                </thead>
+                <tbody id="tbEntradaDatos">
+                    <tr>
+                        <td>
+                            Nombre
+                        </td>
+                        <td>
+                            <input type="hidden" value="" id="id" name="id">
+                            <input type="text" value="" id="nombre" name="nombre" class="">
+                        </td>
+                        <td>
+                            Cantidad
+                        </td>
+                        <td>
+                            <input type="number" value="" id="cantidad" name="cantidad" class="">
+                        </td>
+                    </tr>
+                    <!-- Primera Linea-->
+
+                    <tr>
+                        <td>
+                            Número Lote
+                        </td>
+                        <td>
+                            <input type="text" value="" id="nrolote" name="nrolote" class="">
+                        </td>
+                        <td>
+                            Descripcion
+                        </td>
+                        <td>
+                            <input type="text" value="" id="descripcion" name="descripcion" class="">
+                        </td>
+                    </tr>
+                    <!-- Segunda Linea-->
+                    <tr>
+                        <td>
+                            Precio Compra
+                        </td>
+                        <td>
+                            <input type="number" value="" id="prccompra" name="prccompra" class="">
+                        </td>
+                        <td>
+                            Precio Venta
+                        </td>
+                        <td>
+                            <input type="number" value="" id="prcventa" name="prcventa" class="">
+                        </td>
+                    </tr>
+                    <!-- Tercera Linea-->
+
+                    <tr>
+                        <td>
+                            Categoria
+                        </td>
+                        <td>
+                            <select id="categoria" name="categoria" class="">
+                                <option> --Seleccionar la Categoría</option>
+                                <option>Producto Frescos</option>
+                                <option>Productos Refrigerados</option>
+                                <option>Productos Congelados</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- Quinta Linea btn btn-success-->
+
+                    <tr>
+                        <td colspan="4">
+                            <input type="button" value="A D I C I O N A R" id="btnAdicionar" name="btnAdicionar"
+                                onclick="" class="btn btn-primary">
+                            <input type="button" value="A C T U A L I Z A R" id="btnActualizarr" name="btnActualizar"
+                                onclick="" class="btn btn-secondary">
+                            <input type="button" value="E L I M I N A R" id="btnEliminar" name="btnEliminar" onclick=""
+                                class="btn btn-danger">
+                        </td>
+
+                    </tr>
+                    <!--//*-Diseño de los Botones -->
+                </tbody>
+                <!-- Captura de Datos-->
+
+            </table>
+        </div>
+        <br>
+
+        <tr>
+            <td>
+                <select id='salSelector'>
+                    <option>--Todos los Productos</option>
+                    <option>Nombre Producto</option>
+                    <option>Nombre Producto</option>
+                </select>
+            </td>
+
+            <td>
+                <input type="text" value "" id="consulta" name="consulta">
+            </td>
+        </tr>
+        <!--//*-Segunda Bloque Consulta-->
+        <br>
+        <div id="divSalidaDato" class="table-responsive">
+            <br>
+            <table id="tblSalidaDato" class="table table-hover">
+                <thead id="thSalidaDato">
+                    <tr>
+                        <td class="">Id</td>
+                        <td class="">Nombre</td>
+                        <td class="">Cantidad</td>
+                        <td class="">Referencia</td>
+                        <td class="">Descripcion</td>
+                        <td class="">Precio Compra</td>
+                        <td class="">Precio Venta</td>
+                        <td class="">Nro Lote</td>
+                        <td class="">Tipo Categoria</td>
+                        
+                        
+                    </tr>
+                </thead>
+                <tbody id="tbSalidaDatos">
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="../librerias/bootstrap-5.1.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

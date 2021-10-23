@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Gestionar Productos</title>
+
+    <!-- Bootstrap core CSS  con npm-->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <link href="../../librerias/bootstrap-5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/main.css">
+
+</head>
+
+<body>
+    <form id="frmContinente" name="continente">
+        <div id="divEntradaDato" class="table-responsive">
+            <table id="tblEntradaDato" class="table table-hover">
+
+                <thead id="theadFormulario" class="table-primary">
+                    <tr>
+                        <td colspan="4"><strong>
+                                <h2>Ajustar Inventario</h2>
+                            </strong></td>
+                    </tr>
+                </thead>
+                <!-- 
+                <thead id="thEntradaDato">
+                    <tr>
+                        <td colspan="2" class="titulo">Gestionar Productos</td>
+                    </tr>
+                </thead>
+                 Encabezado-->
+
+                <tbody id="tbEntradaDatos">
+                    <tr>
+                        <td>
+                            Cantidad actual
+                        </td>
+                        <td>
+                            <input type="hidden" value="" id="id" name="id">
+                            <input type="number" value="" id="cantidadActual" name="cantidadActual" class="">
+                        </td>
+                    </tr>
+                    <!-- Primera Linea-->
+
+                    <tr>
+                        <td>
+                            Fecha
+                        </td>
+                        <td>
+                            <input type="date" value="" id="fecha" name="fecha" class="">
+                        </td>
+                    <tr>
+                    <tr>
+                        <td>
+                            Producto
+                        </td>
+                        <td>
+                            <select id="producto" name="producto" class="">
+                                
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="button" value="A D I C I O N A R" id="btnAdicionar" name="btnAdicionar"
+                                onclick="" class="btn btn-primary">
+                            <input type="button" value="A C T U A L I Z A R" id="btnActualizarr" name="btnActualizar"
+                                onclick="" class="btn btn-secondary">
+                            <input type="button" value="E L I M I N A R" id="btnEliminar" name="btnEliminar" onclick=""
+                                class="btn btn-danger">
+                        </td>
+
+                    </tr>
+                    <!--//*-Diseño de los Botones -->
+                </tbody>
+                <!-- Captura de Datos-->
+
+            </table>
+        </div>
+        <br>
+
+        <tr>
+            <td>
+                <select id='salSelector'>
+                    <option>--Todos los Inventarios</option>
+                    <option>Cantidad actual</option>
+                </select>
+            </td>
+
+            <td>
+                <input type="text" value "" id="consulta" name="consulta">
+            </td>
+        </tr>
+        <!--//*-Segunda Bloque Consulta-->
+        <br>
+        <div id="divSalidaDato" class="table-responsive">
+            <br>
+            <table id="tblSalidaDato" class="table table-hover">
+                <thead id="thSalidaDato">
+                    <tr>
+                        <td class="">Id</td>
+                        <td class="">Cantidad actual</td>
+                        <td class="">Fecha</td>
+                        <td class="">Producto</td>
+                    </tr>
+                </thead>
+                <tbody id="tbSalidaDatos">
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="../librerias/bootstrap-5.1.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
